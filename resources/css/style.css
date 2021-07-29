@@ -1,0 +1,190 @@
+/*General*/
+
+ html {
+    font-size: 16px;
+    font-family: 'Quattrocento', serif;
+ }
+
+ section {
+    width: 100%;
+    display: flex;
+ }
+
+ body section:nth-child(even) {
+    background-color: #687083;
+ }
+
+ h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1B202B;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+ }
+
+ h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 400;
+    color: #C5CAD7;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+ }
+
+ h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #1B292B;
+    font-size: 2rem;
+ }
+
+ h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #1B202B;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+ }
+
+ p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: #687083;
+ }
+
+ /*General @1024px*/
+
+ @media only screen and (max-width: 1024px) {
+  h1 {
+      font-size: 2rem;
+      line-height: 1.25;
+      width: 90%;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+      line-height: 1;
+  }
+
+ }  
+
+  /*Header*/
+
+  header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .logo {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 24px
+  }
+
+  .logo span {
+      font-size: 18px;
+      text-transform: uppercase;
+      vertical-align: middle;
+      line-height: 27px;
+  }
+
+  #colmar {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #1B202B;
+  }
+
+  #academy {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #687083;
+  }
+
+  nav ul {
+      display: inline-flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 24px;
+  }
+
+  ul li a {
+      margin-left: 16px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: #1B202B;
+  }
+  nav.mobile {
+      display: none;
+  }
+
+  /*Header - Mobile*/
+
+  @media only screen and (max-width: 768px) {
+      header.logo, header nav {
+          display: none;
+        }
+  
+      nav.mobile, nav.mobile ul {
+          display: inline-flex;
+          justify-content: space-around;
+          width: 100%;
+      
+        } 
+
+    }
+
+    /*Banner*/
+
+    section.banner {
+        top:64px;
+    }
+
+    .banner-img {
+        width: 60%;
+        height: auto;
+        margin: 32px 40px 32px 24px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 320px;
+    }
+
+    .banner-content a {
+        background-color: #1B202B;
+        width: 100%;
+        margin-right: 16px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        transition: all 300ms ease 250ms;
+    }
+
+    .banner-content a:hover {
+        background-color: #C5CAD7;
+        color: #1B202B;
+    }
+
+    /*Banner @1024px*/
+
+    
